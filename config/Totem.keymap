@@ -106,20 +106,20 @@
         compatible = "zmk,keymap";
 
         Main_Layer {
-            display-name = "Default Layer";
+            display-name = "main";
             bindings = <
-&kp Q           &kp W               &kp E             &kp R             &kp T      &kp Y       &kp U              &kp I             &kp O                &kp P
-&mt LEFT_GUI A  &mt LEFT_CONTROL S  &mt LEFT_ALT D    &mt LEFT_SHIFT F  &kp G      &kp H       &mt RIGHT_SHIFT J  &mt RIGHT_ALT K   &mt RIGHT_CONTROL L  &mt RGUI SEMI
-&kp Z           &kp X               &kp C             &kp V             &kp B      &kp N       &kp M              &kp COMMA         &kp DOT              &kp FSLH
-&mt LSHFT ESC   &lt 4 ESC           &lt 1 SPACE       &lt 3 TAB         &kp CAPS   &kp K_MUTE  &lt 2 BSPC         &kp ENTER         &kp DEL              &kp RSHFT
-&kp LEFT        &kp UP              &kp C_PLAY_PAUSE  &kp DOWN          &kp RIGHT  &kp LEFT    &kp DOWN           &kp C_PLAY_PAUSE  &kp UP               &kp RIGHT
+&kp Q          &kp W        &kp E             &kp R        &kp T      &kp Y       &kp U        &kp I             &kp O        &kp P
+&mt LGUI A     &mt LCTRL S  &mt LALT D        &mt LSHFT F  &kp G      &kp H       &mt RSHFT J  &mt RALT K        &mt RCTRL L  &mt RGUI SEMI
+&kp Z          &kp X        &kp C             &kp V        &kp B      &kp N       &kp M        &kp COMMA         &kp DOT      &kp FSLH
+&mt LSHFT ESC  &lt 5 ESC    &lt 1 SPACE       &lt 3 TAB    &kp CAPS   &kp K_MUTE  &lt 2 BSPC   &kp ENTER         &kp DEL      &kp RSHFT
+&kp LEFT       &kp UP       &kp C_PLAY_PAUSE  &kp DOWN     &kp RIGHT  &kp LEFT    &kp DOWN     &kp C_PLAY_PAUSE  &kp UP       &kp RIGHT
             >;
 
             sensor-bindings = <&Scroll_D_U>, <&Scroll_LR>;
         };
 
         Number {
-            display-name = "Lower Layer";
+            display-name = "num";
             bindings = <
 &trans        &kp F9               &kp F10          &kp F11            &kp F12  &kp PLUS        &kp N7              &kp N8            &kp N9                &kp FSLH
 &kp LEFT_GUI  &mt LEFT_CONTROL F5  &mt LEFT_ALT F6  &mt LEFT_SHIFT F7  &kp F8   &kp N0          &mt RIGHT_SHIFT N4  &mt RIGHT_ALT N5  &mt RIGHT_CONTROL N6  &mt RIGHT_GUI DOT
@@ -134,7 +134,7 @@
         };
 
         Sym {
-            display-name = "Raise Layer";
+            display-name = "sym";
             bindings = <
 &kp LS(EXCL)  &kp LS(AT)        &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)         &kp LS(AMPS)         &kp LS(STAR)        &kp LS(LPAR)            &kp LS(RPAR)
 &kp GRAVE     &kp LEFT_CONTROL  &kp LALT       &kp LSHFT     &trans         &kp LS(LC(LA(SEMI)))  &mt RIGHT_SHIFT SQT  &mt RIGHT_ALT LBKT  &mt RIGHT_CONTROL RBKT  &mt RIGHT_GUI BSLH
@@ -172,13 +172,13 @@
             >;
         };
 
-        layer_5 {
+        left_num {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N7  &kp N8  &kp N9  &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &kp N4  &kp N5  &kp N6  &kp DOT  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans  &trans
             >;
         };
 
